@@ -4,7 +4,7 @@ SafetyNet consists of four major api:
 2. Safe Browsing API
 3. reCAPTCHA API
 4. Verify Apps API
-
+***
 Google offers many other options like application sandboxing, encryption, app-based permissions and so on to secularize apps but none of them are considered as an all-inclusive solution. For instance, a sandbox can be easily broken out through device rooting or using intelligent malicious codes. 
 
 Using SafetyNet services it’s possible to build secure apps that refuse to run on such tampered device environments.
@@ -21,6 +21,8 @@ SafetyNet reCAPTCHA API – Checks for spam or abusive actions by detecting whet
 
 SafetyNet Verify Apps API – Checks whether the user has enabled the Verify apps feature on the device and ensures that no known potentially harmful application is running on the Android gadget. The service coordinate with the Verify apps feature to make sure that the app’s data is protected as no other apps on the device on which the app is currently running can perform any malicious actions. With this API you can further confirm that the user’s device is having Verify apps feature enabled on it and if not, you can encourage them to use it.
 
+***
+
 More on SafetyNet Attestation API:
 The API determines the integrity issues on the device and compares the corresponding device profile against the whitelisted device models having Google-approved device profiles. The software backed and hardware-based device profile can be considered compatible only if it matches up with any of the approved profiles in the reference list. A device is considered as approved by Google if it passes the Android Compatibility Test Suite (CTS). Thus, by comparing the device profile against the CTS standards, the API verifies the following:
 
@@ -31,3 +33,4 @@ The API determines the integrity issues on the device and compares the correspon
 5. Whether the software is Android compatible.
 6. Whether the device is free form malicious apps.
 
+<img width="635" alt="Screen Shot 1400-07-06 at 3 48 01 PM" src="https://user-images.githubusercontent.com/22701499/135085512-a1707293-a054-4448-85a3-4c9b986750ec.png">
